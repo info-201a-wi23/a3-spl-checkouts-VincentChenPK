@@ -45,6 +45,7 @@ year_least_checkouts <- library_checkouts %>%
 
 # 4a) Pull the number of 'Checkouts' from the year with the least
 num_lowest_year <- library_checkouts %>%
+  filter(CheckoutYear != 2023) %>%
   group_by(CheckoutYear) %>%
   summarise(total_year_checkouts = sum(Checkouts, na.rm = T)) %>%
   filter(total_year_checkouts == min(total_year_checkouts, na.rm = T)) %>%
