@@ -29,8 +29,8 @@ ggplot(
   geom_bar(stat = "identity") +
   scale_fill_brewer(palette = "Dark2") +
   labs(
-    title = "Library Checkouts By Medium in 2017-2023",
+    title = "Library Checkouts By Different \nBook Mediums in 2017-2023",
     x = "Year",
-    y = "Checkouts",
+    y = "Number of Checkouts",
     fill = "Medium"
   )
