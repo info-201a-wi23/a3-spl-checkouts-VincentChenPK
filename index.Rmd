@@ -2,37 +2,69 @@
 title: "A3: SPL Library Checkouts"
 output: html_document
 ---
+By Vincent Chen
+
+Date: 2/26/2023
+
+Winter 2023
 
 ### Introduction
 
-An introduction of the data and a description of the trends/books/items you are choosing to analyze (and why!)
+> An introduction of the data and a description of the trends/books/items you are choosing to analyze (and why!)
 
 ### Summary Information
 
-Write a summary paragraph of findings that includes the 5 values calculated from your summary information R script
+> Write a summary paragraph of findings that includes the 5 values calculated from your summary information R script
 
-These will likely be calculated using your DPLYR skills, answering questions such as:
-
-- What is the average number of checkouts for each item?
-- What is the month or year with the most/least checkouts for a book that you're interested in?
-- What is the month or year with the most/least checkouts for ebooks?
-- How has the number of print book checkouts changed over time?
-
-Feel free to calculate and report values that you find relevant.
 
 ### The Dataset
 
-- Who collected/published the data?  
-- What are the parameters of the data (dates, number of checkouts, kinds of books, etc.)?
-- How was the data collected or generated?  
-- Why was the data collected?  
-- What, if any, ethical questions do you need to consider when working with this data?  
-- What are possible limitations or problems with this data?   (at least 200 words)
+> Who collected/published the data? 
 
+- The Seattle Public Library
+
+> What are the parameters of the data (dates, number of checkouts, kinds of books, etc.)?
+
+- Data set used: 'Dataset with items checked out at least 10 times a month from 2017-2023' 
+- Dates range from 2017 to 2023 
+- Includes items checked out at least 10 times a month 
+- 12 columns 
+- Total of 816,354 checkouts (rows)
+- Data was last updated February 6, 2023
+- Data set only counts the initial checkout, renewals of physical items are not counted
+- Data set includes a monthly count of Seattle Public Library checkouts by title for physical and electronic items
+
+> How was the data collected or generated?  
+
+- Digital items in the data set come from the following media vendors: Overdrive, hoopla, Freegal, and RBDigital 
+- Historical physical item checkouts from April 2005 to September 30, 2016 are sourced from the Legrady artwork data archives 
+- For October 1, 2016 to present, the source of data derives from the Horizon ILS
+
+> Why was the data collected?  
+
+- To improve public understanding of City operations and other information concerning their communities 
+- Generate economic opportunity for individuals and companies that benefit from the knowledge created by Open Data
+- Empower City employees to be more effective, better coordinated internally, and able to identify opportunities to better serve the public 
+- Encourage the development of innovative technology solutions that improve quality of life 
+- Increasing transparency, accountability, and comparability; promoting economic development and research; and improving internal performance management
+
+> What, if any, ethical questions do you need to consider when working with this data?  
+
+- When working with this data, one must consider the following ethical questions: 
+  - How might this data impact an authors image?
+  - Can this data be used to identify people? 
+  - Which demographic of people are included and excluded in this data? 
+
+> What are possible limitations or problems with this data? (at least 200 words)
+
+- A limitation of this data derives from the fact that it only encompasses checkouts from the Seattle Public Library. By only including a specific library branch in the data set, it excludes data from other libraries in Washington state and worldwide. Essentially, this narrows down the scope and generalization capabilities of exploring trends and patterns in library checkouts across the general public. 
+- Another limitation of this data is the library checkouts only include the monthly count and specified year-for-date context. Although sufficient for exploring general trends and patterns across different months within a year, the absence of the full date prevents further analysis in analyzing patterns throughout the days of the week. It would be interesting to be able to compare the frequency of library checkouts towards the beginning of the month to the end of the month and compare prevalence during the weekdays versus the weekend. 
+- A problem with this data set is the inconsistency in format with the 'PublicationYear' field. By having many formatting varieties, it becomes difficult to work with this field in data analysis and garner accurate insights. 
+- Another problem with this data set derives from instances of blank subject headings and other fields for older checkouts in the data. This absence of information makes it difficult to fully analyze trends and patterns in the past.
 
 ### First Trends Over Time Chart
 
-Include a chart. Make sure to describe why you included the chart, and what patterns emerged
+> Include a chart. Make sure to describe why you included the chart, and what patterns emerged
 
 The first chart that you will create and include will show the trend over time of your variable/topic/interest. Think carefully about what you want to communicate to your user (you may have to find relevant trends in the dataset first!). Here are some requirements to help guide your design:
 
@@ -52,7 +84,7 @@ Here's an example of how to run an R script inside an RMarkdown file:
 
 ### Second Trends Over Time Chart
 
-Include a chart. Make sure to describe why you included the chart, and what patterns emerged
+> Include a chart. Make sure to describe why you included the chart, and what patterns emerged
 
 The second chart that you will create and include will show another trend over time of your variable/topic/interest. Think carefully about what you want to communicate to your user (you may have to find relevant trends in the dataset first!). Here are some requirements to help guide your design:
 
@@ -72,7 +104,7 @@ Here's an example of how to run an R script inside an RMarkdown file:
 
 ### Your Choice
 
-The last chart is up to you. It could be a line plot, scatter plot, histogram, bar plot, stacked bar plot, and more. Here are some requirements to help guide your design:
+> The last chart is up to you. It could be a line plot, scatter plot, histogram, bar plot, stacked bar plot, and more. Here are some requirements to help guide your design:
 
 - You must have clear x and y axis labels
 - The chart needs a clear title 
