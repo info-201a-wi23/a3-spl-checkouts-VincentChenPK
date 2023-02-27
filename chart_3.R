@@ -36,5 +36,6 @@ ggplot(
   labs(
     title = "Digital vs Physical Consumption \nin Library Checkouts (2017 & 2022)",
     x = "Year",
-    y = "Number of Checkouts"
+    y = "Number of Checkouts",
+    fill = "Item Type"
   )
