@@ -22,10 +22,10 @@ source("summary.R")
 ```
 
 ### Summary Information
-My analysis shows that the most prevalent material type for library checkouts in 2017 is `r most_material_2017`, while the most prevalent material type for library checkouts in 2020 is `r most_material_2020`. This shift in the prevalence of material type, indicates that electronic books (ebooks) have become much more popular throughout the years and readers are slowly moving away from physical books. Additionally, it appears `r year_most_checkouts` was the year with the most library checkouts, while `r year_least_checkouts` was the the year with the least. This distinction is interesting as  
-
+   
 > Write a summary paragraph of findings that includes the 5 values calculated from your summary information R script
 
+My analysis shows that the most prevalent material type for library checkouts in 2017 is `r most_material_2017`, while the most prevalent material type for library checkouts in 2020 is `r most_material_2020`. This shift in the prevalence of material type, indicates that electronic books (EBOOKS) have become much more popular throughout the years and readers are slowly moving away from physical books. Given the context of the COVID pandemic beginning in 2020, it also makes sense that readers would opt for an electronic book over a physical book more. Additionally, it appears `r year_most_checkouts` was the year with the most library checkouts, amounting to approximately `r num_highest_year` library checkouts, while `r year_least_checkouts` was the the year with the least, totaling `r num_lowest_year` library checkouts. This distinction is interesting as the year with the most library checkouts and least is only a year apart. Given the induction of the COVID pandemic in 2020, it makes sense that there would be a much lower number of checkouts in 2020 as people wouldn't be able to go to the library in-person as freely. In the year with the most checkouts (`r year_most_checkouts`), it turns out `r month_most_checkouts_2019` (January) is the month with the most checkouts, with the genre `r most_subjects_jan_2019` accounting for most of it. Lastly, it was found that the author with the most library checkouts within the data is `r author_most_checkouts`, who is a popular children's literature author.     
 
 ### The Dataset
 
