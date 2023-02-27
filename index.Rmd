@@ -66,53 +66,51 @@ Winter 2023
 
 > Include a chart. Make sure to describe why you included the chart, and what patterns emerged
 
-The first chart that you will create and include will show the trend over time of your variable/topic/interest. Think carefully about what you want to communicate to your user (you may have to find relevant trends in the dataset first!). Here are some requirements to help guide your design:
-
-- Show more than one, but fewer than ~10 trends
-  - For example, two books, or 5 different mediums
-- You must have clear x and y axis labels
-- The chart needs a clear title 
-- You need a legend for your different line colors and a clear - legend title
-In your .Rmd file, make sure to describe why you included the chart, and what patterns emerged
-
-When we say "clear" or "human readable" titles and labels, that means that you should not just display the variable name.
-
-Here's an example of how to run an R script inside an RMarkdown file:
-
-``````{r, echo = FALSE, warning = FALSE, code = readLines("chart1_example.R")}
+``````{r, echo = FALSE, warning = FALSE, code = readLines("chart_1.R")}
 ```
+
+This chart displays the prevalence of 3 different book mediums for library checkouts between 2017 and 2023. 
+
+#### Rationale 
+By filtering library checkouts by differing book mediums and grouping the records by checkout year, it allows us to visually analyze the patterns and fluctuations in physical and digital book consumption throughout the years. 
+
+#### Insights 
+- The earliest year in the data (2017), illustrates that physical books makes up the majority of library checkouts, in comparison to its digital counterparts 
+- In the following years after 2017, audiobooks and ebooks see a gradual increase in the prevalence of library checkouts 
+- Physical book checkouts reach an all time low in 2020, while the prevalence of ebooks reaches its peak in 2020
 
 ### Second Trends Over Time Chart
 
 > Include a chart. Make sure to describe why you included the chart, and what patterns emerged
 
-The second chart that you will create and include will show another trend over time of your variable/topic/interest. Think carefully about what you want to communicate to your user (you may have to find relevant trends in the dataset first!). Here are some requirements to help guide your design:
-
-- Show more than one, but fewer than ~10 trends
-  - For example, two books, or 5 different mediums
-- You must have clear x and y axis labels
-- The chart needs a clear title 
-- You need a legend for your different line colors and a clear - legend title
-In your .Rmd file, make sure to describe why you included the chart, and what patterns emerged
-
-When we say "clear" or "human readable" titles and labels, that means that you should not just display the variable name.
-
-Here's an example of how to run an R script inside an RMarkdown file:
-
-``````{r, echo = FALSE, code = readLines("chart2_example.R")}
+``````{r, echo = FALSE, code = readLines("chart_2.R")}
 ```
+
+This chart displays the monthly fluctuations in library checkouts between two books in 2019.
+
+#### Rationale 
+With this chart, I wanted to compare a required high school reading ('Lord of the Flies') and a popular fun reading ('The Fault in Our Stars') among people that are presumably in the same age bracket. I chose the year 2019 due to the higher volume of library checkouts in comparison to other years, and being prior to the onslaught of the COVID pandemic. My motivation derives from wanting to explore if there's patterns in library checkouts throughout the months, with emphasis on looking at 'summer vacation' months and 'school year' months objectively. 
+
+#### Insights 
+- The Fault in Our Stars reaches its peak of about 23 library checkouts in July, 2019 (presumably summer vacation time)
+- Lord of the Flies maintains a higher number of checkouts in comparison to The Fault in Our Stars throughout most of the year (besides July), which is presumably within the school year time frame 
+- Lord of the Flies reaches its peak of about 20 library checkouts in September, 2019 (presumably beginning of academic school year/end of summer vacation)
 
 ### Your Choice
 
 > The last chart is up to you. It could be a line plot, scatter plot, histogram, bar plot, stacked bar plot, and more. Here are some requirements to help guide your design:
 
-- You must have clear x and y axis labels
-- The chart needs a clear title 
-- You need a legend for your different line colors and a clear legend title
-
-Here's an example of how to run an R script inside an RMarkdown file:
-
-``````{r, echo = FALSE, code = readLines("chart2_example.R")}
+``````{r, echo = FALSE, code = readLines("chart_3.R")}
 ```
+
+This chart displays the prevalence of digital versus physical item checkouts in the year 2017 and 2022. 
+
+#### Rationale 
+- With this chart, I wanted to explore the general trends and patterns in digital and physical item checkouts. I chose to use the year 2017 as it's the earliest year in the data set and decided to use the year 2022 as it's the most recent year in the data set that fully accounts for library checkouts. The year 2023 is still in-progress and incomplete, so I decided to not use that year for comparative analysis. I hope to explore how the prevalence of digital and physical item checkouts change between an earlier year and more present year in the data.   
+
+#### Insights 
+- In 2017, physical item checkouts make up the majority of library checkouts 
+- In 2017, physical item checkouts account for about 1000 checkouts, which is about twice as many as digital item checkouts 
+- In 2022, digital item checkouts account for a larger portion of the library checkouts, at roughly 2900 checkouts 
 
 
