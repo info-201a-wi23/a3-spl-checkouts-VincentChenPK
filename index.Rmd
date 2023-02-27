@@ -12,7 +12,17 @@ Winter 2023
 
 > An introduction of the data and a description of the trends/books/items you are choosing to analyze (and why!)
 
+In this report, I will be leveraging library checkout data from the Seattle Public Library (SPL). More specifically, the data set encompasses items that have been checked out at least 10 times a month from the year 2017 to 2023. I will be analyzing notions such as the most prevalent type of item checked out within differing years, the year with the most/least number of checkouts, the author with the most checkouts within the data, the month with the most checkouts in 2019, and the most prevalent subject for checkouts in January, 2019. 
+
+#### Rationale
+I'm interested in exploring how digital and physical item library checkouts fluctuates throughout the years and how events such as the COVID pandemic may influence library checkouts and preferential types of items being checked out more. I'm also interested in exploring the most popular subject in a specified time and which author accounts for the majority of the library checkouts as a means of understanding what types of content and narratives resonates most with SPL attendees. 
+
+```{r, echo = FALSE, message = FALSE}
+source("summary.R")
+```
+
 ### Summary Information
+My analysis shows that the most prevalent material type for library checkouts in 2017 is `r most_material_2017`, while the most prevalent material type for library checkouts in 2020 is `r most_material_2020`. This shift in the prevalence of material type, indicates that electronic books (ebooks) have become much more popular throughout the years and readers are slowly moving away from physical books. Additionally, it appears `r year_most_checkouts` was the year with the most library checkouts, while `r year_least_checkouts` was the the year with the least. This distinction is interesting as  
 
 > Write a summary paragraph of findings that includes the 5 values calculated from your summary information R script
 
