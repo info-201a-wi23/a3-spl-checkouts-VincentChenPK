@@ -76,7 +76,7 @@ My analysis shows that the most prevalent material type for library checkouts in
 
 > Include a chart. Make sure to describe why you included the chart, and what patterns emerged
 
-``````{r, echo = FALSE, warning = FALSE, code = readLines("chart_1.R")}
+``````{r message = FALSE, echo = FALSE, code = readLines("chart_1.R")}
 ```
 
 This chart displays the prevalence of 3 different book mediums for library checkouts between 2017 and 2023. 
